@@ -16,6 +16,6 @@ while read line; do
     echo "$line" >> $TMP_FILENAME
 done
 
-emacs $TMP_FILENAME < /dev/tty
+emacs $TMP_FILENAME $* < /dev/tty
 
 rm -f $TMP_FILENAME
